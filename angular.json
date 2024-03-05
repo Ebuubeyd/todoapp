@@ -23,6 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "poll": 1000,
             "outputPath": "dist/todoapp",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -35,7 +36,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -106,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a09cafbf-f7eb-4750-8291-5a09a2cdf8fd"
   }
 }
